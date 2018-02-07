@@ -11,5 +11,7 @@ describe "user edits a student" do
     expect(current_path).to eq(student_path(student))
     expect(page).to_not have_content("simon")
     expect(page).to have_content("garfunkel")
+    expect(page).to have_link("new student")
+    expect(page).to have_link("all students")
   end
 end

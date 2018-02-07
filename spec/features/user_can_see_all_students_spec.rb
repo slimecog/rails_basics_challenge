@@ -11,5 +11,7 @@ describe "user can see all students" do
     expect(page).to have_content("bill")
     expect(page).to have_content("billy")
     expect(page).to have_content("billy bob")
+    expect(page).to have_link("new student")
+    expect(page).to have_link("all students")
   end
 end
