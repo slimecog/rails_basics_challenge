@@ -7,5 +7,7 @@ describe "user can see single student" do
 
     expect(current_path).to eq(student_path(student))
     expect(page).to have_content("cameron")
+    expect(page).to have_link("new student")
+    expect(page).to have_link("all students")
   end
 end

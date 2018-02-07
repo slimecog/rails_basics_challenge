@@ -12,5 +12,7 @@ describe "a user deletes a student" do
     expect(current_path).to eq(students_path)
     expect(page).to_not have_content(student.name)
     expect(page).to have_content(student2.name)
+    expect(page).to have_link("new student")
+    expect(page).to have_link("all students")
   end
 end

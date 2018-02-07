@@ -10,5 +10,7 @@ describe "a user creates a student" do
     expect(current_path).to eq("/students/#{Student.last.id}")
     expect(page).to have_content("new student")
     expect(Student.count).to eq(1)
+    expect(page).to have_link("new student")
+    expect(page).to have_link("all students")
   end
 end
