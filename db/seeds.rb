@@ -10,3 +10,9 @@ NAMES = ["gary", "cameron", "jason", "kevin", "bob"]
 NAMES.each do |name|
   Student.create!(name: name)
 end
+
+Address.create!(description: "home", street: "123 main", city: "denver", state: "co", zipcode: 80203, student_id: [1,2,3,4,5].sample)
+Address.create!(description: "beahchouse", street: "123 beach", city: "denver", state: "co", zipcode: 80203, student_id: [1,2,3,4,5].sample)
+Address.create!(description: "skihut", street: "123 ski", city: "denver", state: "co", zipcode: 80203, student_id: [1,2,3,4,5].sample)
+Address.create!(description: "mom's", street: "123 mom", city: "denver", state: "co", zipcode: 80203, student_id: [1,2,3,4,5].sample)
+Address.create!(description: "ladyfriend", street: "123 lady", city: "denver", state: "co", zipcode: 80203, student_id: [1,2,3,4,5].sample)
